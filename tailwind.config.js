@@ -4,6 +4,9 @@ module.exports = {
     content: ["./index.html", "./src/**/*.{ts,tsx,js,jsx}"],
   theme: {
   	extend: {
+      fontFamily: {
+        inter: ['var(--font-inter)'],
+      },
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
@@ -59,24 +62,38 @@ module.exports = {
   				'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
   				border: 'hsl(var(--sidebar-border))',
   				ring: 'hsl(var(--sidebar-ring))'
-  			}
+  			},
+        status: {
+          awaiting: 'hsl(var(--status-awaiting))',
+          'awaiting-text': 'hsl(var(--status-awaiting-text))',
+          completed: 'hsl(var(--status-completed))',
+          'completed-text': 'hsl(var(--status-completed-text))',
+          'high-priority': 'hsl(var(--status-high-priority))',
+          'high-priority-text': 'hsl(var(--status-high-priority-text))',
+          'md-referral': 'hsl(var(--status-md-referral))',
+          'md-referral-text': 'hsl(var(--status-md-referral-text))',
+          discharged: 'hsl(var(--status-discharged))',
+          'discharged-text': 'hsl(var(--status-discharged-text))',
+          'discharge-planned': 'hsl(var(--status-discharge-planned))',
+          'discharge-planned-text': 'hsl(var(--status-discharge-planned-text))',
+        },
+        risk: {
+          low: 'hsl(var(--risk-low))',
+          'low-text': 'hsl(var(--risk-low-text))',
+          medium: 'hsl(var(--risk-medium))',
+          'medium-text': 'hsl(var(--risk-medium-text))',
+          high: 'hsl(var(--risk-high))',
+          'high-text': 'hsl(var(--risk-high-text))',
+        }
   		},
   		keyframes: {
   			'accordion-down': {
-  				from: {
-  					height: '0'
-  				},
-  				to: {
-  					height: 'var(--radix-accordion-content-height)'
-  				}
+  				from: { height: '0' },
+  				to: { height: 'var(--radix-accordion-content-height)' }
   			},
   			'accordion-up': {
-  				from: {
-  					height: 'var(--radix-accordion-content-height)'
-  				},
-  				to: {
-  					height: '0'
-  				}
+  				from: { height: 'var(--radix-accordion-content-height)' },
+  				to: { height: '0' }
   			}
   		},
   		animation: {

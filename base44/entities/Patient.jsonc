@@ -1,0 +1,103 @@
+{
+  "name": "Patient",
+  "type": "object",
+  "properties": {
+    "patient_name": {
+      "type": "string",
+      "title": "Patient Name"
+    },
+    "mrn": {
+      "type": "string",
+      "title": "MRN"
+    },
+    "assigned_care_manager": {
+      "type": "string",
+      "title": "Assigned Care Manager"
+    },
+    "role": {
+      "type": "string",
+      "title": "Role",
+      "enum": [
+        "RN Case Manager",
+        "Social Worker"
+      ]
+    },
+    "floor": {
+      "type": "string",
+      "title": "Floor / Unit",
+      "enum": [
+        "3 North",
+        "3 South",
+        "4 East",
+        "4 West",
+        "5 North",
+        "ICU",
+        "NICU",
+        "ER"
+      ]
+    },
+    "payer": {
+      "type": "string",
+      "title": "Payer",
+      "enum": [
+        "Medicare",
+        "Medicaid",
+        "Blue Cross",
+        "Aetna",
+        "UnitedHealth",
+        "Cigna",
+        "Self-Pay"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "title": "Status",
+      "enum": [
+        "Awaiting Review",
+        "Completed",
+        "High Priority",
+        "MD Referral",
+        "Discharged",
+        "Discharge Planned"
+      ]
+    },
+    "notes": {
+      "type": "string",
+      "title": "Notes"
+    },
+    "risk_score": {
+      "type": "string",
+      "title": "AI Risk Score",
+      "enum": [
+        "Low",
+        "Medium",
+        "High"
+      ]
+    },
+    "admission_date": {
+      "type": "string",
+      "title": "Admission Date",
+      "format": "date"
+    },
+    "diagnosis": {
+      "type": "string",
+      "title": "Primary Diagnosis"
+    },
+    "age": {
+      "type": "number",
+      "title": "Age"
+    },
+    "room": {
+      "type": "string",
+      "title": "Room"
+    }
+  },
+  "required": [
+    "patient_name",
+    "assigned_care_manager",
+    "role",
+    "floor",
+    "status",
+    "risk_score"
+  ]
+}

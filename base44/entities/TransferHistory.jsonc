@@ -1,0 +1,48 @@
+{
+  "name": "TransferHistory",
+  "type": "object",
+  "properties": {
+    "patient_id": {
+      "type": "string",
+      "title": "Patient ID"
+    },
+    "patient_name": {
+      "type": "string",
+      "title": "Patient Name"
+    },
+    "previous_care_manager": {
+      "type": "string",
+      "title": "Previous Care Manager"
+    },
+    "new_care_manager": {
+      "type": "string",
+      "title": "New Care Manager"
+    },
+    "reason": {
+      "type": "string",
+      "title": "Reason",
+      "enum": [
+        "Workload Balancing",
+        "Coverage / Assistance",
+        "Reassignment to New Team",
+        "Other"
+      ]
+    },
+    "reason_notes": {
+      "type": "string",
+      "title": "Reason Notes"
+    },
+    "transfer_date": {
+      "type": "string",
+      "title": "Transfer Date",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "patient_id",
+    "patient_name",
+    "previous_care_manager",
+    "new_care_manager",
+    "reason"
+  ]
+}
