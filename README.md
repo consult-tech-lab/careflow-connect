@@ -1,7 +1,7 @@
 CareFlow Connect is a responsive web application for RN case managers, social workers, team leads, and administrators working in EHR/HIS environments. It improves workflow visibility, prioritization, workload balancing, and traceable patient reassignment across care teams.
 
 Overview
-When the software environment does not reflect the actual team workflow, RN case managers, social workers, and other care-team clinicians spend more time coordinating assignments, tracking messages, and reconciling lists than completing care-coordination tasks. CareFlow Connect is designed to close those workflow gaps by making assignment ownership, patient status, and reassignment activity visible in one shared interface.
+When the software environment does not reflect the actual team workflow, RN case managers, social workers, and other care-team clinicians spend more time coordinating assignments, and tracking messages than completing care-coordination tasks. CareFlow Connect is designed to close those workflow gaps by making assignment ownership, patient status, and reassignment activity visible in one shared interface. CareFlow Connect is a responsive web application built to provide a consistent and usable experience across desktop, tablet, and mobile devices, ensuring accessibility for care teams in varied clinical workflows.
 
 Problem Statement
 Current care-coordination work is often fragmented across inboxes, spreadsheets, static assignment boards, and inconsistent messaging pathways. This creates:
@@ -254,5 +254,4 @@ Customizable labels by facility.
 Intended Impact
 CareFlow Connect is intended to improve operational efficiency, workflow clarity, and trust across care teams. It supports better coordination by reducing fragmented communication and making assignment changes visible, traceable, and fast.
 
-AI Disclosure
-This documentation was drafted with assistance from generative AI and reviewed by the author before use.
+.
