@@ -252,6 +252,7 @@ Drag-and-drop assignment views.
 Customizable labels by facility.
 
 Intended Impact
+
 CareFlow Connect is intended to improve operational efficiency, workflow clarity, and trust across care teams. It supports better coordination by reducing fragmented communication and making assignment changes visible, traceable, and fast.
 
 .
