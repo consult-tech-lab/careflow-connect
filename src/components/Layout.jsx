@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
 import { Outlet, Link, useLocation } from "react-router-dom";
-import { LayoutDashboard, History, Moon, Sun, Menu, X, Heart } from "lucide-react";
+import { LayoutDashboard, History, Moon, Sun, Menu, Heart, ArrowRightLeft, DatabaseZap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const NAV_ITEMS = [
   { path: "/", label: "Dashboard", icon: LayoutDashboard },
+  { path: "/transfer-adjust", label: "Transfer / Reassign", icon: ArrowRightLeft },
   { path: "/audit-log", label: "Transfer History", icon: History },
 ];
 
@@ -69,7 +70,16 @@ export default function Layout() {
           })}
         </nav>
 
-        <div className="p-4 border-t border-border">
+        <div className="p-4 border-t border-border space-y-1">
+          <a
+            href="#"
+            onClick={(e) => { e.preventDefault(); }}
+            title="Export to BI Tool"
+            className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-muted-foreground hover:bg-muted hover:text-foreground transition-colors"
+          >
+            <DatabaseZap className="w-4 h-4" />
+            Export to BI Tool
+          </a>
           <Button
             variant="ghost"
             size="sm"
@@ -97,13 +107,18 @@ export default function Layout() {
             <Heart className="w-4 h-4 text-primary" />
             <span className="text-sm font-semibold">Unified Care</span>
           </div>
-          <Button
-            variant="ghost"
-            size="icon"
-            onClick={() => setDarkMode(!darkMode)}
-          >
-            {darkMode ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
-          </Button>
+          <div className="flex items-center gap-1">
+            <Button variant="ghost" size="icon" title="Export to BI Tool">
+              <DatabaseZap className="w-4 h-4" />
+            </Button>
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={() => setDarkMode(!darkMode)}
+            >
+              {darkMode ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
+            </Button>
+          </div>
         </header>
 
         <main className="flex-1 overflow-auto">

@@ -8,6 +8,7 @@ import UserNotRegisteredError from '@/components/UserNotRegisteredError';
 import Layout from './components/Layout';
 import Dashboard from './pages/Dashboard';
 import AuditLog from './pages/AuditLog';
+import TransferAdjust from './pages/TransferAdjust';
 
 const AuthenticatedApp = () => {
   const { isLoadingAuth, isLoadingPublicSettings, authError, navigateToLogin } = useAuth();
@@ -37,6 +38,7 @@ const AuthenticatedApp = () => {
     <Routes>
       <Route element={<Layout />}>
         <Route path="/" element={<Dashboard />} />
+        <Route path="/transfer-adjust" element={<TransferAdjust />} />
         <Route path="/audit-log" element={<AuditLog />} />
         <Route path="*" element={<PageNotFound />} />
       </Route>

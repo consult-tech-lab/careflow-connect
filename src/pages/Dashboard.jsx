@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 import { LayoutGrid, List, Users, ArrowRightLeft, Loader2 } from "lucide-react";
 import FilterPanel from "../components/dashboard/FilterPanel";
+import InlineTransferHistory from "../components/dashboard/InlineTransferHistory";
 import KPICards from "../components/dashboard/KPICards";
 import PatientCard from "../components/dashboard/PatientCard";
 import PatientTable from "../components/dashboard/PatientTable";
@@ -180,6 +181,8 @@ export default function Dashboard() {
       {viewMode === "assignment" && (
         <AssignmentView patients={filteredPatients} onClickPatient={setDetailPatient} />
       )}
+
+      <InlineTransferHistory />
 
       {/* Transfer Modal */}
       <TransferModal
