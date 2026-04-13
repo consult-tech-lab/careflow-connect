@@ -5,6 +5,7 @@ import {
   Target, TrendingUp, ClipboardCheck, BarChart2
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import ProductivityTutorial from "../components/tutorial/ProductivityTutorial";
 import { Badge } from "@/components/ui/badge";
 
 // ─── TRANSFER TUTORIAL STEPS ──────────────────────────────────────────────────
@@ -609,6 +610,7 @@ function StepViewer({ steps, accentColor = "primary" }) {
 const TABS = [
   { key: "transfer", label: "Transfer & Reassign", icon: ArrowRightLeft },
   { key: "tally", label: "Productivity Tally", icon: Target },
+  { key: "productivity", label: "Productivity Tab Guide", icon: BarChart2 },
 ];
 
 export default function Tutorial() {
@@ -693,6 +695,10 @@ export default function Tutorial() {
           <StepViewer steps={TALLY_STEPS} />
           <TallyDemo />
         </div>
+      )}
+
+      {activeTab === "productivity" && (
+        <ProductivityTutorial />
       )}
     </div>
   );
