@@ -9,6 +9,7 @@ import Layout from './components/Layout';
 import Dashboard from './pages/Dashboard';
 import AuditLog from './pages/AuditLog';
 import TransferAdjust from './pages/TransferAdjust';
+import Tutorial from './pages/Tutorial';
 
 const AuthenticatedApp = () => {
   const { isLoadingAuth, isLoadingPublicSettings, authError, navigateToLogin } = useAuth();
@@ -41,6 +42,7 @@ const AuthenticatedApp = () => {
         <Route path="/dashboard" element={<Navigate to="/" replace />} />
         <Route path="/transfer-adjust" element={<TransferAdjust />} />
         <Route path="/audit-log" element={<AuditLog />} />
+        <Route path="/tutorial" element={<Tutorial />} />
         <Route path="*" element={<PageNotFound />} />
       </Route>
     </Routes>

@@ -1,12 +1,13 @@
 import { useState, useEffect } from "react";
 import { Outlet, Link, useLocation } from "react-router-dom";
-import { LayoutDashboard, History, Moon, Sun, Menu, Heart, ArrowRightLeft, DatabaseZap } from "lucide-react";
+import { LayoutDashboard, History, Moon, Sun, Menu, Heart, ArrowRightLeft, DatabaseZap, BookOpen } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const NAV_ITEMS = [
   { path: "/", label: "Dashboard", icon: LayoutDashboard },
   { path: "/transfer-adjust", label: "Transfer / Reassign", icon: ArrowRightLeft },
   { path: "/audit-log", label: "Transfer History", icon: History },
+  { path: "/tutorial", label: "How-To Tutorial", icon: BookOpen },
 ];
 
 export default function Layout() {

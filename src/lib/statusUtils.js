@@ -46,13 +46,35 @@ export const RISK_CONFIG = {
   },
 };
 
+// Role mapping: strictly one role per care manager
+export const CARE_MANAGER_ROLES = {
+  "Sarah Johnson":   "RN Case Manager",
+  "Michael Chen":    "RN Case Manager",
+  "Emily Rodriguez": "RN Case Manager",
+  "Laura Patel":     "RN Case Manager",
+  "James Wilson":    "RN Case Manager",
+  "Kevin Brooks":    "RN Case Manager",
+  "David Kim":       "Social Worker",
+  "Rachel Thompson": "Social Worker",
+  "Amanda Foster":   "Social Worker",
+  "Marcus Lee":      "Social Worker",
+  "Nina Okafor":     "Social Worker",
+  "Tanya Rivera":    "Social Worker",
+};
+
 export const CARE_MANAGERS = [
   "Sarah Johnson",
   "Michael Chen",
   "Emily Rodriguez",
+  "Laura Patel",
+  "James Wilson",
+  "Kevin Brooks",
   "David Kim",
   "Rachel Thompson",
-  "James Wilson",
+  "Amanda Foster",
+  "Marcus Lee",
+  "Nina Okafor",
+  "Tanya Rivera",
 ];
 
 export const ROLES = ["RN Case Manager", "Social Worker"];
