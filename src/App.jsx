@@ -10,6 +10,7 @@ import Dashboard from './pages/Dashboard';
 import AuditLog from './pages/AuditLog';
 import TransferAdjust from './pages/TransferAdjust';
 import Tutorial from './pages/Tutorial';
+import Productivity from './pages/Productivity';
 
 const AuthenticatedApp = () => {
   const { isLoadingAuth, isLoadingPublicSettings, authError, navigateToLogin } = useAuth();
@@ -43,6 +44,7 @@ const AuthenticatedApp = () => {
         <Route path="/transfer-adjust" element={<TransferAdjust />} />
         <Route path="/audit-log" element={<AuditLog />} />
         <Route path="/tutorial" element={<Tutorial />} />
+        <Route path="/productivity" element={<Productivity />} />
         <Route path="*" element={<PageNotFound />} />
       </Route>
     </Routes>
