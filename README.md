@@ -1,5 +1,7 @@
 ## CareFlow Connect: Clinical Workflow and Team Coordination Optimization
 
+https://github.com/user-attachments/assets/f63615df-7921-4911-9c4e-e85b2ba6250f
+
 **Overview**  
 CareFlow Connect is a responsive clinical app built for care teams that need a clear, simple way to manage patient assignments and team coordination across desktop, tablet, and mobile devices.
 
@@ -98,7 +100,6 @@ The AI risk score acts as decision support, not a replacement for clinical judgm
 **Impact**  
 CareFlow Connect improves operational efficiency, workflow clarity, and team trust by making patient coordination visible, fast, and traceable.
  
-
 
 https://github.com/user-attachments/assets/f63615df-7921-4911-9c4e-e85b2ba6250f
 
