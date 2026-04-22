@@ -100,6 +100,6 @@ The AI risk score acts as decision support, not a replacement for clinical judgm
 **Impact**  
 CareFlow Connect improves operational efficiency, workflow clarity, and team trust by making patient coordination visible, fast, and traceable.
  
-
+** I create healthcare apps focused on clinicians to minimize administrative tasks and free up time for patient care, using rapid prototyping with modern no-code tools and user-friendly design. ~Joanne Landais**
 
 
